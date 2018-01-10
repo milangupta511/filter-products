@@ -44,7 +44,6 @@ class App extends Component {
   };
   render() {
     this.productData = this.filterProducts([...ProductData], this.state);
-
     return (
       <div>
         <SearchBar

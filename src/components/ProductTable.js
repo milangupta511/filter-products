@@ -19,7 +19,7 @@ const ProductTable = props => {
           </TableRow>
         </thead>
 
-        {Object.keys(dataByCategory).map(category => {
+        {props.data.length<=0? (<p> No items Found</p>): Object.keys(dataByCategory).map(category => {
           return (
             <tbody>
               <TableRowHeader colSpan={tableColumns.length}>
